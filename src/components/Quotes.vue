@@ -13,9 +13,10 @@
 <script>
 export default {
   name: 'Quotes',
+
   data () {
     return {
-      value: 3,
+      value: "",
       max: 10
     }
   }
