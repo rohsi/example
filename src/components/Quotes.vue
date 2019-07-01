@@ -1,11 +1,5 @@
 <template>
-  <div>
 
-    <h5>Text you have entered</h5>
-    <b-progress :value="value" :max="max" show-value class="mb-3"></b-progress>
-
-
-  </div>
 
 </template>
 
@@ -16,8 +10,7 @@ export default {
 
   data () {
     return {
-      value: "",
-      max: 10
+
     }
   }
 }
