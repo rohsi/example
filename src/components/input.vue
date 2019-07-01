@@ -8,18 +8,23 @@
 
 <script>
     export default {
-        name: "input",
-      data:{
+      name: "input",
+      data() {
+        return {
 
-            simple:''
 
+          simple: ''
+
+
+        }
 
       },
-      methods:{
-          enter:function () {
-                this.simple='';
-          }
+      methods :{
+        enter(){
+          this.simple='';
+        }
       }
+
     }
 </script>
 
