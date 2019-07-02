@@ -7,7 +7,7 @@
       <p>{{message}}</p>
       <div v-for="(quote,index) in quotes" :key="index">
 
-        <p v-on:click="deletearray(index)">{{quote}}</p>
+        <p @click="deletearray(index)">{{quote}}</p>
       </div>
     </div>
 </template>
@@ -31,10 +31,9 @@
             this.message=null;
             this.feedback='delete text' ;
           }
+        },deletearray:function(index){
+          this.quotes.splice( index, 1 );
         }
-      },
-      deletearray:function(index){
-       this.quotes.splice( index, 1 );
       }
 
 
