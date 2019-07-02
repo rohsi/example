@@ -1,20 +1,28 @@
 <template>
   <div id="app">
 
-    <Quotes/>
-    <input/>
+<Quote/>
     <router-view/>
   </div>
 </template>
 
 <script>
 
-  import Quotes from "./components/Quotes";
-  import input from "./components/input"
+
+  import Quote from "./components/Quote";
   export default {
     name: 'App',
-    components: Quotes,
-     input
+    components: {Quote},
+    data() {
+      return {
+
+      }
+    },
+    methods: {
+      enter() {
+        this.message=[]
+      }
+    },
   }
 </script>
 
